@@ -23,6 +23,13 @@ void print(int n) {
     cout << n << endl;
 }
 
+int fib(int n) {
+    if (n == 0) return 0;
+    if (n == 1) return 1;
+
+    return fib(n - 1) + fib(n - 2);
+}
+
 // recursion-1
 
 int main(void) {
@@ -30,6 +37,7 @@ int main(void) {
     cin >> n;
     // cout << fact(n) << endl;
     // cout << power(n) << endl;
-    print(n);
+    // print(n);
+    cout << fib(n) << endl;
     return 0;
 }
